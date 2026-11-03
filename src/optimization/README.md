@@ -1,0 +1,1 @@
+Parameter optimization is reserved for M4. The optimizer will consume explicit bounds, frozen parameters and separate training/validation measurements off the audio thread. No output EQ or hidden gain normalization is applied by the current analyzer.

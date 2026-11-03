@@ -1,0 +1,9 @@
+/build*/
+/dist/
+/.serena/
+.DS_Store
+*.user
+
+__pycache__/
+
+/.local-data/

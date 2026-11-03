@@ -1,0 +1,10 @@
+name: macOS offline measurement
+on: [push, pull_request]
+jobs:
+  build-test:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+      - run: cmake --build build -j 3
+      - run: ctest --test-dir build --output-on-failure
